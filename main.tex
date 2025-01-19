@@ -1,0 +1,340 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{col  or}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{accent}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+        \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            \textbf{#1} & \textbf{\small #2} \\
+            \textit{\small#3} & \textit{\small #4} \\
+        \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\vspace{-2pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\newcommand\skippar[1]{\par#1\par\vspace{-\parskip}}
+
+\newcommand{\CPP}{C\texttt{++}}
+
+%----------FONT OPTIONS----------
+% sans-serif
+\usepackage[default]{sourcesanspro}
+% \usepackage[default]{raleway}
+% \usepackage[sfdefault,light]{FiraSans}
+
+% serif
+% \usepackage{charter}
+
+%----------COLOR OPTIONS----------
+% \definecolor{accent}{RGB}{0, 51, 102} % Blue
+\definecolor{accent}{RGB}{120, 40, 56} % Red
+% \definecolor{accent}{RGB}{0, 0, 0} % Black
+
+
+%-------------------------------------------
+%%%%%%%%%%%%%%%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \skippar{
+    {\Huge \scshape \fontsize{28pt}{32pt}\selectfont Ethan \textcolor{accent}{Balakumar}} \\ \vspace{1pt}
+    \small \textcolor{accent}{\raisebox{-0.1\height}\faPhone}\ 312-468-1449 ~ 
+    \href{mailto:ethan.balakumar@gmail.com}{\textcolor{accent}{\raisebox{-0.2\height}\faEnvelope}\ \underline{ethan.balakumar@gmail.com}} ~ 
+    \href{https://linkedin.com/in/ebalakumar/}{\textcolor{accent}{\raisebox{-0.2\height}\faLinkedin}\ \underline{linkedin.com/in/ebalakumar}} ~ 
+    \href{https://etbala.com}{\textcolor{accent}{\raisebox{-0.2\height}\faLink}\ \underline{etbala.com}} ~ 
+    % \href{https://github.com/etbala}{\textcolor{accent}{\raisebox{-0.2\height}\faGithub}\ \underline{github.com/etbala}}
+    }
+    \vspace{-8pt}
+\end{center}
+
+%-----------PROFILE-------------
+\begin{comment}
+\section{Profile}
+Profile text here...
+\end{comment}
+
+%-----------EDUCATION-----------
+\section{\textcolor{accent}{Education}}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Rensselaer Polytechnic Institute}{Expected Dec 2025}
+            {Bachelor of Science in Computer Science}{Troy, NY}
+            \resumeItemListStart
+                \resumeItem{3.51 GPA}
+                \resumeItem{Undegraduate Teaching Assistant, Data Structures (300+ Students)}
+                \resumeItem{Rensselaer Center for Open Source (RCOS) Mentor}
+                \resumeItem{Top 3\% in National Cyber League (NCL) Cybersecurity Competition}
+                \resumeItem{Competed in the International Collegiate Programming Contest (ICPC) and in HackRPI}
+                \resumeItem{\textbf{Courses:} Data Structures, Algorithms, Software Principles, Operating Systems, Database Systems, Parallel Programming, Computer Architecture, Computer Vision, Artificial Intelligence, Large Scale Program and Testing, Modern Binary Exploitation}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------EXPERIENCE-----------
+\section{\textcolor{accent}{Experience}}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {JPMorgan Chase \& Co.}{Jun 2025 -- Aug 2025}
+            {Software Engineer Program (SEP) Intern}{Chicago, IL}
+            \resumeItemListStart
+                \resumeItem{}
+                \resumeItem{}
+                \resumeItem{}
+                \resumeItem{}
+            \resumeItemListEnd
+    
+        \resumeSubheading
+            {Doron Precision Systems}{Jun 2024 -- Aug 2024}
+            {Software Engineer Intern}{Binghamton, NY}
+            \resumeItemListStart
+                \resumeItem{Collaborated with a team to engineer a dynamic traffic system from scratch using \CPP.}
+                \resumeItem{Developed AI logic to simulate human driving, creating modifiable driving scenarios for varying driver behaviors.}
+                \resumeItem{Implemented efficient vehicle tracking and lane-changing systems, enhancing the realism of the simulation.}
+                \resumeItem{Enhanced an internal configurator to improve system setup and maintenance for simulators.}
+            \resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+   % \resumeSubSubheading
+   %  {Software Engineer I}{Oct 2014 - Sep 2016}
+   %  \resumeItemListStart
+   %     \resumeItem{Apache Beam}
+   %       {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+   %  \resumeItemListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{\textcolor{accent}{Projects}}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{\href{https://github.com/etbala/SearchRPI}{SearchRPI}} $|$ Project Lead $|$ \emph{\CPP, Go, Python}}{Jan 2025 -- Present}
+            \resumeItemListStart
+                \resumeItem{}
+                \resumeItem{}
+                \resumeItem{}
+                \resumeItem{}
+            \resumeItemListEnd
+            \vspace{-13pt}
+
+        \resumeProjectHeading
+            {\textbf{\href{https://github.com/etbala/LeetCodeDuels}{LeetCode Duels}} $|$  \emph{Go, Postgres, Python}}{Jan 2024 -- Dec 2024}
+            \resumeItemListStart
+                \resumeItem{Developed a browser extension for LeetCode to enable real-time head-to-head code duels between users.}
+                \resumeItem{Engineered a Go backend to manage concurrent game sessions, tracking player submissions and real-time status.}
+                \resumeItem{Designed a customizable matchmaking service allowing players to queue for duels with selected problem metadata.}
+                \resumeItem{Integrated GitHub OAuth 2.0 for secure authentication, linking profiles and tracking player stats.}
+            \resumeItemListEnd
+            \vspace{-13pt}
+
+        \resumeProjectHeading
+            {\textbf{\href{https://github.com/etbala/CacheDB}{In-Memory Key-Value Database}} $|$ \emph{C, \CPP}}{Jul 2024 -- Oct 2024}
+            \resumeItemListStart
+                \resumeItem{Developed an in-memory key-value data store server, achieving an average response time of 0.1ms.}
+                \resumeItem{Utilized non-blocking socket programming and I/O multiplexing techniques to handle concurrent client connections.}
+                \resumeItem{Implemented custom data structures, including hash tables and AVL trees, to efficiently manage and store data.}
+            \resumeItemListEnd
+            \vspace{-13pt}
+
+        \resumeProjectHeading
+            {\textbf{\href{https://sharingval.com}{Equity \& Firm Valuation Calculator}} $|$ \emph{Python, Flask}}{Jun 2023 -- Dec 2023}
+            \resumeItemListStart
+                \resumeItem{Collaborated with a former finance professor from Cornell to create a tool to assess any publicly traded firm's intrinsic value.}
+                \resumeItem{Implemented Capital Asset Pricing Model (CAPM) and Implied Cost of Capital (ICC) to value firms.}
+                \resumeItem{Designed CI/CD pipelines via GitHub Actions, deploying a Dockerized app to AWS ECR and hosted on App Runner.}
+                \resumeItem{Enabled users to simulate outcomes by adjusting key parameters and dynamically recalculating valuations.}
+            \resumeItemListEnd
+            \vspace{-13pt}
+
+    \resumeSubHeadingListEnd
+    \vspace{-4pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\textcolor{accent}{Technical Skills}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: \CPP, Go, Python, C, Java, JavaScript, SQL, PostgreSQL, x86} \\
+     \textbf{Libraries}{: Boost, Flask, NumPy, OpenCV, PyTorch, Sklearn, Selenium, JUnit} \\
+     \textbf{Developer Tools}{: AWS, Docker, Git, GitHub Actions, Linux, CMake
+     % , Unreal Engine 5
+     }
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------INVOLVEMENT---------------
+\begin{comment}
+\section{\textcolor{accent}{Extracurricular}}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Undergraduate Mentor/Teaching Assistant}{Jan 2025 -- May 2025}{Data Structures}{Rensselaer Polytechnic Institute}
+            \resumeItemListStart
+                \resumeItem{}
+            \resumeItemListEnd
+
+        \resumeSubheading{Rensselaer Center for Open Source (RCOS)}{Jan 2025 -- Dec 2025}{Mentor}{Rensselaer Polytechnic Institute}
+            \resumeItemListStart
+                \resumeItem{}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\end{comment}
+
+\end{document}
+
+
+\begin{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% ARCHIVED %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%% WORK EXPERIENCE %%%%%%%%%%
+
+
+\resumeSubheading
+    {Part-Time Hourly Consultant $|$ \href{https://www.sharingval.com}{sharingval.com}}{Jun 2023 -- Sep 2023}
+    {Full Stack Developer}{Chicago, IL}
+    \resumeItemListStart
+        \resumeItem{Collaborated with a former finance professor from Cornell to create a tool to assess any publicly traded firm's intrinsic value.}
+        \resumeItem{Implemented Capital Asset Pricing Model (CAPM) and Implied Cost of Capital (ICC) to value firms.}
+        \resumeItem{Designed CI/CD pipelines via GitHub Actions, deploying a Dockerized app to AWS ECR and hosted on App Runner.}
+        \resumeItem{Enabled users to simulate outcomes by adjusting key parameters and dynamically recalculating valuations.}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {LSV Asset Management}{Jun 2020 -- Jul 2020}
+    {Data Integration Intern}{Chicago, IL}
+    \resumeItemListStart
+        \resumeItem{Worked on a data warehousing project that helped bridge a six-month gap in a time series data that was being used for research.}
+        \resumeItem{Improved the accuracy and reliability of the firm’s historical portfolio holdings and market data while gaining expertise in large dataset analysis, data structuring, and manipulation of time series data.}
+        \resumeItem{Created a Python script to parse large datasets, extract key data elements, transform, and import them into an existing Microsoft SQL Server based data warehouse.}
+    \resumeItemListEnd
+
+
+%%%%%%%%%% PROJECTS %%%%%%%%%%
+
+\resumeProjectHeading
+    {\textbf{\href{}{Stock Price Prediction Neural Network}} $|$ \emph{\CPP, Protobuf}}{Jun 2024 -- Present}
+    \resumeItemListStart
+        \resumeItem{Developing a feed-forward neural network from scratch in C++ to predict stock prices using historical data.}
+        \resumeItem{Implemented core neural network functionalities, including forward and backpropagation algorithms from scratch.}
+        \resumeItem{Analyzed model performance and compared predictions to existing library-based solutions for validation.}
+        %\resumeItem{} % Change these, copied
+    \resumeItemListEnd
+    \vspace{-13pt}
+
+\resumeProjectHeading
+    {\textbf{Independently Moving Objects Detector} $|$ \emph{Python, OpenCV, Sklearn}}{Jan 2024 -- Apr 2024}
+    \resumeItemListStart
+        \resumeItem{Developed a computer vision algorithm to detect independently moving objects from images captured from moving vehicle.}
+        \resumeItem{Implemented corner detection and optical flow estimation to track feature points, calculating the camera's focus of expansion to distinguish between background motion and independently moving objects.}
+        \resumeItem{Applied outlier clustering techniques to accurately identify and highlight moving objects.}
+    \resumeItemListEnd 
+    \vspace{-13pt}
+
+\resumeProjectHeading
+    {\textbf{Image Background Classifier} $|$ \emph{Python, OpenCV, Pytorch}}{Feb 2024 -- Apr 2024}
+    \resumeItemListStart
+        \resumeItem{Developed a custom convolutional neural network (CNN) to classify image backgrounds into one of six categories.}
+        \resumeItem{Optimized hyperparameters to improve accuracy, achieve high precision with minimal training time.}
+        \resumeItem{Analyzed performance using overall accuracy, per-class accuracy, and confusion matrices to validate model effectiveness.}
+    \resumeItemListEnd 
+    \vspace{-13pt}
+
+\resumeProjectHeading
+    {\textbf{IBM z/OS Open Tools} $|$ \emph{C, \CPP, Unix}}{Sep 2023 -- Dec 2023}
+    \resumeItemListStart
+        \resumeItem{Worked to port the C++ Boost library to IBM's z/OS operating system.}
+        \resumeItem{Replaced incompatible Linux with z/OS specific implementations..}
+        \resumeItem{Created documentation to support future contributors and streamline onboarding.}
+    \resumeItemListEnd 
+    \vspace{-13pt}
+
+\resumeProjectHeading
+    {\textbf{Email Sensitive Information Detector} $|$ \emph{JavaScript, CSS/HTML, Flask, PyTorch}}{Nov 2023}
+    \resumeItemListStart
+        \resumeItem{Developed a Chrome extension that utilizes Artificial Intelligence techniques to identify sensitive personal information in emails as users compose them, highlighting the detected content to provide alerts.}
+        \resumeItem{Created a middle tier server using Python and Flask to facilitate efficient REST API communication between the extension and AI model for real time communication and feedback.}
+    \resumeItemListEnd
+
+\end{comment}
